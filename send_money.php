@@ -49,16 +49,16 @@ if (!isset($_SESSION['user_id'])) {
                 <form action="/send_money" method="POST" class="send-money-form">
                     <div class="form-group">
                         <label for="recipient">
-                            <i class="fas fa-user"></i> Recipient's Email or Wallet Address
+                            <i class="fas fa-user"></i> Wallet Address
                         </label>
                         <input type="text" id="recipient" name="recipient" 
-                               placeholder="Enter recipient's email" required>
+                               placeholder="Enter recipient's address" required>
                     </div>
 
                     <div class="form-group">
                         <label for="amount">
                             <span id="currency-symbol">
-                                <i class="fas fa-rupee-sign"></i> <!-- Default to INR -->
+                                <i class="fa-brands fa-bitcoin"></i>
                             </span>
                             Amount
                         </label>
@@ -66,8 +66,8 @@ if (!isset($_SESSION['user_id'])) {
                             <input type="number" id="amount" name="amount" 
                                    placeholder="0.00" step="0.01" required>
                             <select id="currency" name="currency">
-                                <option value="INR" selected>INR</option>
-                                <option value="USD">USD</option>
+                                <option value="BTC" selected>BTC</option>
+                                <option value="ETH">ETH</option>
                             </select>
                         </div>
                     </div>
@@ -80,10 +80,10 @@ if (!isset($_SESSION['user_id'])) {
                         currencySelect.addEventListener("change", function() {
                             const selectedCurrency = currencySelect.value;
                             
-                            if (selectedCurrency === "INR") {
-                                currencySymbol.innerHTML = '<i class="fas fa-rupee-sign"></i>'; // INR symbol
-                            } else if (selectedCurrency === "USD") {
-                                currencySymbol.innerHTML = '<i class="fas fa-dollar-sign"></i>'; // USD symbol
+                            if (selectedCurrency === "BTC") {
+                                currencySymbol.innerHTML = '<i class="fa-brands fa-bitcoin"></i>'; 
+                            } else if (selectedCurrency === "ETH") {
+                                currencySymbol.innerHTML = '<i class="fa-brands fa-ethereum"></i>'; 
                             }
                         });
                     </script>
