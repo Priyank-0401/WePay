@@ -1,4 +1,42 @@
-/* Reset and base styles */
+header {
+    background-color: #1a73e8;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Content */
+main {
+    margin-top: 3.5rem; /* This should equal the height of the header */
+    padding: 0; /* No extra padding around the main content */
+    max-width: 100%; /* Full width */
+}
+
+/* Title Box */
+.page-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0; /* Remove default margin */
+    color: white; /* White text color */
+    padding: 1.5rem 0; /* Padding for spacing */
+    background: linear-gradient(135deg, #1a73e8, #4caf50); /* Blue to green gradient */
+    width: 100%; /* Full width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+
+/* Global Fixes */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -11,16 +49,6 @@ body {
     color: #333;
 }
 
-/* Header and Navigation */
-header {
-    background: linear-gradient(135deg, #1a237e, #0d47a1);
-    padding: 1rem 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
 
 nav ul {
     display: flex;
@@ -43,21 +71,6 @@ nav a:hover {
     color: #90caf9;
 }
 
-/* Main Content */
-main {
-    margin-top: 5rem;
-    padding: 2rem;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.page-title {
-    text-align: center;
-    color: #1a237e;
-    margin-bottom: 3rem;
-    font-size: 2.5rem;
-}
 
 /* Legal Content Styles */
 .legal-content {
@@ -94,13 +107,14 @@ main {
     margin-bottom: 0.5rem;
 }
 
-/* Footer */
+/* Footer Styles */
 footer {
-    background: #1a237e;
-    color: white;
     text-align: center;
-    padding: 2rem;
-    margin-top: 4rem;
+    background-color: #1a73e8;
+    color: white;
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: 2rem;
 }
 
 /* Responsive Design */

@@ -1,176 +1,108 @@
-/* Reset and base styles */
-* {
+/* Reset and Basic Styles */
+body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
+    background-color: #f9f9f9;
     color: #333;
 }
 
-/* Header and Navigation */
+/* Navbar Header */
 header {
-    background: linear-gradient(135deg, #1a237e, #0d47a1);
+    background-color: #1a73e8;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 1rem 0;
-    position: fixed;
-    width: 100%;
+    position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-nav ul {
+header nav ul {
+    list-style: none;
     display: flex;
     justify-content: center;
-    gap: 2rem;
-    list-style: none;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0;
+    margin: 0;
 }
 
-nav a {
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: bold;
+    font-size: 1.1rem;
     transition: color 0.3s;
 }
 
-nav a:hover {
-    color: #90caf9;
-}
-
-/* Main Content */
-main {
-    margin-top: 5rem;
-    padding: 2rem;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+header nav ul li a:hover {
+    color: #FFD700; /* Gold color on hover */
 }
 
 .page-title {
-    text-align: center;
-    color: #1a237e;
-    margin-bottom: 3rem;
     font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0; /* Remove default margin */
+    color: white; /* White text color */
+    padding: 1.5rem 0; /* Add padding for better spacing */
+    background: linear-gradient(135deg, #1a73e8, #4caf50); /* Blue to green gradient */
+    width: 100%; /* Make the title span the full width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
 }
 
-/* Legal Content Styles */
+/* Legal Content */
 .legal-content {
-    max-width: 900px;
-    margin: 0 auto;
-    background: white;
+    width: 90%;
+    max-width: 800px;
+    margin: 2rem auto;
+    background-color: white;
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .legal-content h2 {
-    color: #1a237e;
-    margin: 2rem 0 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid #e0e0e0;
+    color: #0066cc;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
     font-size: 1.8rem;
 }
 
-.legal-content h2:first-child {
-    margin-top: 0;
-}
-
 .legal-content h3 {
-    color: #496da2;
-    margin: 1.5rem 0 0.5rem;
+    color: #004d99;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
     font-size: 1.4rem;
 }
 
 .legal-content p {
-    margin-bottom: 1rem;
-    color: #444;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #555;
 }
 
 .legal-content ul {
-    margin: 1rem 0 1.5rem;
-    padding-left: 2rem;
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
-.legal-content li {
+.legal-content ul li {
     margin-bottom: 0.5rem;
     color: #444;
 }
 
-.legal-content a {
-    color: #1a237e;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.legal-content a:hover {
-    color: #0d47a1;
-    text-decoration: underline;
-}
-
-/* Footer */
+/* Footer Styles */
 footer {
-    background: #1a237e;
-    color: white;
     text-align: center;
-    padding: 2rem;
-    margin-top: 4rem;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-        gap: 1rem;
-    }
-
-    .page-title {
-        font-size: 2rem;
-        margin-bottom: 2rem;
-    }
-
-    main {
-        padding: 1rem;
-    }
-
-    .legal-content {
-        padding: 1.5rem;
-    }
-
-    .legal-content h2 {
-        font-size: 1.6rem;
-    }
-
-    .legal-content h3 {
-        font-size: 1.3rem;
-    }
-}
-
-/* Print styles */
-@media print {
-    header {
-        position: static;
-        background: none;
-        color: #000;
-    }
-
-    nav {
-        display: none;
-    }
-
-    .legal-content {
-        box-shadow: none;
-        padding: 0;
-    }
-
-    footer {
-        background: none;
-        color: #000;
-    }
+    background-color: #1a73e8;
+    color: white;
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: 2rem;
 }
