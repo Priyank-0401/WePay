@@ -1,19 +1,21 @@
 /* ABOUT.CSS */
-
 /* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #f4f7fc;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 /* Header Styles */
 header {
-    background-color: #1a73e8;
+    background-color: #2d3e50;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 1rem 0;
+    padding: 2rem 0;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -40,12 +42,12 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #ffcc00;
+    color: #1abc9c;
 }
 
 /* Hero Section Styles */
 .hero {
-    background: linear-gradient(135deg, #1a73e8, #4caf50);
+    background: linear-gradient(135deg, #2d3e50, #1abc9c);
     color: white;
     text-align: center;
     padding: 2rem 1rem;
@@ -70,10 +72,11 @@ header nav ul li a:hover {
     margin: 2rem auto;
     max-width: 800px;
     text-align: center;
+    border-top: 5px solid #1abc9c;
 }
 
 .mission h2 {
-    color: #1a73e8;
+    color: #2d3e50;
     font-size: 2rem;
     margin-bottom: 1rem;
 }
@@ -86,13 +89,13 @@ header nav ul li a:hover {
 /* Achievements Section Styles */
 .achievements {
     padding: 2rem 1rem;
-    background-color: #f0f4f8;
+    background-color: #f9f9f9;
 }
 
 .achievements h2 {
     text-align: center;
     font-size: 2rem;
-    color: #1a73e8;
+    color: #2d3e50;
     margin-bottom: 2rem;
 }
 
@@ -111,6 +114,7 @@ header nav ul li a:hover {
     padding: 1.5rem;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     text-align: center;
+    border: 1px solid #ddd;
 }
 
 .achievement-card:hover {
@@ -125,7 +129,7 @@ header nav ul li a:hover {
 }
 
 .achievement-card a {
-    color: #1a73e8;
+    color: #1abc9c;
     text-decoration: none;
 }
 
@@ -145,7 +149,7 @@ header nav ul li a:hover {
 .team h2 {
     text-align: center;
     font-size: 2rem;
-    color: #1a73e8;
+    color: #2d3e50;
     margin-bottom: 2rem;
 }
 
@@ -162,6 +166,7 @@ header nav ul li a:hover {
     padding: 1.5rem;
     text-align: center;
     max-width: 300px;
+    border: 1px solid #ddd;
 }
 
 .team-card h3 {
@@ -179,9 +184,25 @@ header nav ul li a:hover {
 /* Footer Styles */
 footer {
     text-align: center;
-    background-color: #1a73e8;
+    background-color: #2d3e50;
     color: white;
     padding: 1rem;
     font-size: 0.9rem;
     margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.1rem;
+    }
 }
