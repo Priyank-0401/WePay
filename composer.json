@@ -1,0 +1,13 @@
+{
+    "name": "priyank-0401/we-pay",
+    "version": "1.0.0",
+    "autoload": {
+        "psr-4": {
+            "Priya\\WePay\\": "src/"
+        }
+    },
+    "require": {
+        "web3p/web3.php": "^0.3.2",
+        "guzzlehttp/guzzle": "^7.0"
+    }
+}

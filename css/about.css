@@ -1,0 +1,208 @@
+/* ABOUT.CSS */
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fc;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+/* Header Styles */
+header {
+    background-color: #2d3e50;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 2rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #1abc9c;
+}
+
+/* Hero Section Styles */
+.hero {
+    background: linear-gradient(135deg, #2d3e50, #1abc9c);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+/* Mission Section Styles */
+.mission {
+    background-color: #ffffff;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 2rem auto;
+    max-width: 800px;
+    text-align: center;
+    border-top: 5px solid #1abc9c;
+}
+
+.mission h2 {
+    color: #2d3e50;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.mission p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Achievements Section Styles */
+.achievements {
+    padding: 2rem 1rem;
+    background-color: #f9f9f9;
+}
+
+.achievements h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #2d3e50;
+    margin-bottom: 2rem;
+}
+
+.achievement-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.achievement-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.achievement-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.achievement-card a {
+    color: #1abc9c;
+    text-decoration: none;
+}
+
+.achievement-card p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Team Section Styles */
+.team {
+    padding: 2rem 1rem;
+    background-color: #ffffff;
+}
+
+.team h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #2d3e50;
+    margin-bottom: 2rem;
+}
+
+.team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.team-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    max-width: 300px;
+    border: 1px solid #ddd;
+}
+
+.team-card h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.team-card p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color: #2d3e50;
+    color: white;
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+}
