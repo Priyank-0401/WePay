@@ -1,9 +1,7 @@
 <?php
 include 'db_config.php';
-include 'session_init.php';
 session_start();
 
-$_SESSION['user_id'] = $user_id;
 
 // Check if the form is submitted
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
