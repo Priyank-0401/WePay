@@ -1,6 +1,7 @@
 <?php
 include 'db_config.php';
 include 'wallet_functions.php';
+include 'session_init.php';
 require_once 'wallet_functions.php';
 
 session_start();
